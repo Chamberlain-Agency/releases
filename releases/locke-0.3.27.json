@@ -1,0 +1,26 @@
+{
+  "product": "Locke",
+  "version": "0.3.27",
+  "filename": "locke-0.3.27.zip",
+  "url": "https://github.com/yaw-sh/releases/releases/download/locke-0.3.27/locke-0.3.27.zip",
+  "tag": "locke-0.3.27",
+  "website_url": "https://locke.chamberlain.agency/downloads/locke-0.3.27.zip",
+  "permanent_download": "https://download.locke.chamberlain.agency/",
+  "bytes": 178814,
+  "sha256": "6dd5447c6fd7600fbd729b935c237229f961f72101f63d1786e85db38923937b",
+  "formula": "Formula/locke.rb",
+  "repository": "yaw-sh/releases",
+  "git_identity": {
+    "name": "yawsh",
+    "email": "177674030+yaw-sh@users.noreply.github.com"
+  },
+  "installation": "Installs the unchanged plugin directory; host import and Drive connection remain explicit.",
+  "npm": {
+    "filename": "locke-0.3.27.tgz",
+    "bytes": 143755,
+    "sha256": "7271f1aca5ed2bb003289ae36be69da40318e72ee5c4eb617dd9ec70b4dbd01b",
+    "url": "https://github.com/yaw-sh/releases/releases/download/locke-0.3.27/locke-0.3.27.tgz",
+    "command": "locke setup",
+    "registry_published": false
+  }
+}

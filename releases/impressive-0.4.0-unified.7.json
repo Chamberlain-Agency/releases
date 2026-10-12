@@ -1,0 +1,26 @@
+{
+  "product": "Impressive",
+  "version": "0.4.0-unified.7",
+  "tag": "impressive-0.4.0-unified.7",
+  "repository": "yaw-sh/releases",
+  "formula": "Formula/impressive.rb",
+  "license": {
+    "id": "LicenseRef-Impressive-Personal-Use-Only",
+    "url": "https://impressive.chamberlain.agency/downloads/LICENSE.txt"
+  },
+  "artifacts": [
+    {
+      "name": "impressive-0.4.0-unified.7.zip",
+      "bytes": 1119026,
+      "sha256": "90a69d2373e103dd22f0fd729045e5c3a47c5d9bc1c8a044eb1f3f17e3e7a8d5",
+      "url": "https://github.com/yaw-sh/releases/releases/download/impressive-0.4.0-unified.7/impressive-0.4.0-unified.7.zip"
+    },
+    {
+      "name": "impressive-0.4.0-unified.7.tgz",
+      "bytes": 1014695,
+      "sha256": "98ae1a86a803b24980e4f4f9630b356c76a398ec14a392470bd8e8cb9a83e84d",
+      "url": "https://github.com/yaw-sh/releases/releases/download/impressive-0.4.0-unified.7/impressive-0.4.0-unified.7.tgz"
+    }
+  ],
+  "npm_stable_url": "https://impressive.chamberlain.agency/downloads/impressive.tgz"
+}
