@@ -1,9 +1,9 @@
 class Locke < Formula
   desc "Save chats and continue work through your connected Google Drive"
   homepage "https://locke.chamberlain.agency/"
-  url "https://github.com/yaw-sh/releases/releases/download/locke-0.3.27/locke-0.3.27.zip"
-  version "0.3.27"
-  sha256 "6dd5447c6fd7600fbd729b935c237229f961f72101f63d1786e85db38923937b"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.0/locke-0.4.0.zip"
+  version "0.4.0"
+  sha256 "5336e14bda518524379c02cb013814e3e54aa96ec8f63eaaa261c3620c2803ce"
   license :cannot_represent
 
   def install
@@ -13,18 +13,19 @@ class Locke < Formula
       #!/bin/sh
       case "${1:-setup}" in
         path) echo "#{opt_libexec}" ;;
-        version|--version) echo "0.3.27" ;;
+        version|--version) echo "0.4.0" ;;
         setup|install|help|--help)
           cat <<'LOCKE_HELP'
-      Locke 0.3.27
+      Locke 0.4.0
       Local plugin: #{opt_libexec}
 
       Load this directory using your host's supported local plugin controls.
       For a ZIP import, download https://download.locke.chamberlain.agency/.
       In your own ChatGPT account, attach that ZIP to Plugin Creator and ask
       for an unchanged private import, then install its returned plugin.
-      Connect Google Drive in your account and select your destination folder.
-      Enroll capture once; optional folder setup is a separate start action.
+      Install/connect Google Drive and select your destination folder once.
+      Enable capture for future chats; trust the native Codex hooks.
+      Web setup provides one instruction to add to Custom Instructions.
 
       The host must load executable skills, provide Node execution and expose
       its connected Google Drive tools. This command stages the plugin; it
