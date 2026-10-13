@@ -1,9 +1,9 @@
 class Impressive < Formula
   desc "Build and edit WordPress/Bricks websites through your AI assistant"
   homepage "https://impressive.chamberlain.agency/"
-  url "https://github.com/yaw-sh/releases/releases/download/impressive-0.4.0-unified.7/impressive-0.4.0-unified.7.zip"
-  version "0.4.0-unified.7"
-  sha256 "90a69d2373e103dd22f0fd729045e5c3a47c5d9bc1c8a044eb1f3f17e3e7a8d5"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.12/impressive-0.4.0-unified.12.zip"
+  version "0.4.0-unified.12"
+  sha256 "8498aec274cb73ba205c0bd1c5b0054f1b02419453fe91f7105539c4a1e0f325"
   license :cannot_represent
 
   depends_on "python@3.13"
@@ -12,9 +12,16 @@ class Impressive < Formula
     libexec.install Dir["*", ".agents", ".codex-plugin", ".mcp.json"]
     (bin/"impressive").write <<~EOS
       #!/bin/sh
+      if [ "${1:-}" = "update" ]; then
+        shift
+        exec "#{Formula["python@3.13"].opt_bin}/python3.13" "#{opt_libexec}/helpers/updates.py" "$@"
+      fi
+      if [ "${1:-}" = "--version" ]; then
+        exec "#{Formula["python@3.13"].opt_bin}/python3.13" "#{opt_libexec}/helpers/updates.py" version
+      fi
       if [ "${1:-}" = "serve" ]; then
         shift
-        exec "#{Formula["python@3.13"].opt_bin}/python3.13" "#{opt_libexec}/engine/impressive.py" serve "$@"
+        IMPRESSIVE_EXECUTION_MODE="${IMPRESSIVE_EXECUTION_MODE:-installer}" exec "#{Formula["python@3.13"].opt_bin}/python3.13" "#{opt_libexec}/engine/impressive.py" serve "$@"
       fi
       if [ "${1:-}" = "config" ]; then
         shift
