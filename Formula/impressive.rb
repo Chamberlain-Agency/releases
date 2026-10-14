@@ -1,9 +1,9 @@
 class Impressive < Formula
   desc "Build and edit WordPress/Bricks websites through your AI assistant"
   homepage "https://impressive.chamberlain.agency/"
-  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.12/impressive-0.4.0-unified.12.zip"
-  version "0.4.0-unified.12"
-  sha256 "8498aec274cb73ba205c0bd1c5b0054f1b02419453fe91f7105539c4a1e0f325"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.13/impressive-0.4.0-unified.13.zip"
+  version "0.4.0-unified.13"
+  sha256 "b98eaedbbdd19908eabc1518fe9011fa1bc5674163f35a4dddce21173ee8056d"
   license :cannot_represent
 
   depends_on "python@3.13"
