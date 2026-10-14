@@ -1,9 +1,9 @@
 class Locke < Formula
   desc "Save chats and continue work through your connected Google Drive"
   homepage "https://locke.chamberlain.agency/"
-  url "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.0/locke-0.4.0.zip"
-  version "0.4.0"
-  sha256 "5336e14bda518524379c02cb013814e3e54aa96ec8f63eaaa261c3620c2803ce"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.2/locke-0.4.2.zip"
+  version "0.4.2"
+  sha256 "ca510c799018e71a3d0dead83d8fe84256b58eebc5c0a63983e08093a32220d6"
   license :cannot_represent
 
   def install
@@ -13,13 +13,15 @@ class Locke < Formula
       #!/bin/sh
       case "${1:-setup}" in
         path) echo "#{opt_libexec}" ;;
-        version|--version) echo "0.4.0" ;;
+        codex-install) exec node "#{opt_libexec}/runtime/install-codex.mjs" ;;
+        version|--version) echo "0.4.2" ;;
         setup|install|help|--help)
           cat <<'LOCKE_HELP'
-      Locke 0.4.0
+      Locke 0.4.2
       Local plugin: #{opt_libexec}
 
-      Load this directory using your host's supported local plugin controls.
+      For native Codex run locke codex-install, then review/trust its five hooks.
+For ChatGPT Web import this directory/ZIP with the supported private controls.
       For a ZIP import, download https://download.locke.chamberlain.agency/.
       In your own ChatGPT account, attach that ZIP to Plugin Creator and ask
       for an unchanged private import, then install its returned plugin.
@@ -32,7 +34,7 @@ class Locke < Formula
       does not register an agent, create a Drive folder or run an MCP server.
       LOCKE_HELP
           ;;
-        *) echo "Usage: locke [setup|path|version]" >&2; exit 2 ;;
+        *) echo "Usage: locke [setup|codex-install|path|version]" >&2; exit 2 ;;
       esac
     EOS
     (bin/"locke").chmod 0755
