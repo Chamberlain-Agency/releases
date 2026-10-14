@@ -1,0 +1,55 @@
+{
+  "version": "0.4.0-unified.18",
+  "kind": "integrated-plugin",
+  "source_commit": "360aecb3557af6829b8789be7196f580772a8b41",
+  "prepared_at_utc": "2026-10-14T00:36:28.424528+00:00",
+  "artifacts": [
+    {
+      "name": "impressive-0.4.0-unified.18.zip",
+      "bytes": 3562380,
+      "sha256": "01524f234a587e17c16a8a6ccdfcabd30c29c71e53f1ee3eaeceb1c4e68a5c4b",
+      "url": "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.18/impressive-0.4.0-unified.18.zip"
+    },
+    {
+      "name": "impressive-0.4.0-unified.18.tgz",
+      "bytes": 3457580,
+      "sha256": "0d0d38e6d5d5385cf421ba94553017d69a2e2215e9ea1691d6863f5e54a82580",
+      "url": "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.18/impressive-0.4.0-unified.18.tgz"
+    }
+  ],
+  "homebrew": {
+    "name": "impressive.rb",
+    "bytes": 2432,
+    "sha256": "8c16cc8d033b0d3c09cb0b8b1853bc9a7eb570ca2ae32e6d38bcca8d4bbf35de",
+    "tap": "Chamberlain-Agency/releases",
+    "tap_url": "https://github.com/Chamberlain-Agency/releases.git",
+    "path": "website/packages/shared-releases-0.4.0-unified.18/Formula/impressive.rb"
+  },
+  "published": false,
+  "publication_state": "prepared; exact owner approval required",
+  "execution_profile": "local-stdio",
+  "license": "LicenseRef-Impressive-Personal-Use-Only",
+  "publication_targets": {
+    "repository": "Chamberlain-Agency/releases",
+    "repository_id": 1415927635,
+    "release_tag": "impressive-0.4.0-unified.18",
+    "formula": "Formula/impressive.rb",
+    "metadata": "releases/impressive-0.4.0-unified.18.json",
+    "stable_npm": "https://impressive.chamberlain.agency/downloads/impressive.tgz",
+    "website": "https://impressive.chamberlain.agency/",
+    "worker": "impressive-downloads"
+  },
+  "automatic_updates": {
+    "default": "automatic",
+    "check": "normal local MCP startup, at most daily",
+    "channel": "https://api.github.com/repos/Chamberlain-Agency/releases/releases",
+    "legacy_channel_redirect_retained": true,
+    "integrity": "GitHub asset SHA-256 and byte count; positive archive inventory",
+    "first_upgrade_from_7": "normal installation or package-manager upgrade; not automatic"
+  },
+  "product": "Impressive",
+  "tag": "impressive-0.4.0-unified.18",
+  "repository": "Chamberlain-Agency/releases",
+  "formula": "Formula/impressive.rb",
+  "npm_stable_url": "https://impressive.chamberlain.agency/downloads/impressive.tgz"
+}

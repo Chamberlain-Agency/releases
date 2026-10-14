@@ -3,9 +3,9 @@ require "json"
 class Impressive < Formula
   desc "Build and edit WordPress/Bricks websites through your AI assistant"
   homepage "https://impressive.chamberlain.agency/"
-  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.17/impressive-0.4.0-unified.17.zip"
-  version "0.4.0-unified.17"
-  sha256 "0ba83ddebcb06e280c932d092275b50c2fee577d3a8ea79ed6630a2773a2ed8b"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.18/impressive-0.4.0-unified.18.zip"
+  version "0.4.0-unified.18"
+  sha256 "01524f234a587e17c16a8a6ccdfcabd30c29c71e53f1ee3eaeceb1c4e68a5c4b"
   license :cannot_represent
 
   depends_on "python@3.13"
