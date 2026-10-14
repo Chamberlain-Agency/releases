@@ -25,8 +25,8 @@
     "tap_url": "https://github.com/Chamberlain-Agency/releases.git",
     "path": "website/packages/shared-releases-0.4.0-unified.13/Formula/impressive.rb"
   },
-  "published": false,
-  "publication_state": "prepared; exact owner approval required",
+  "published": true,
+  "publication_state": "published",
   "execution_profile": "local-stdio",
   "license": "LicenseRef-Impressive-Personal-Use-Only",
   "publication_targets": {
@@ -51,5 +51,8 @@
   "tag": "impressive-0.4.0-unified.13",
   "repository": "Chamberlain-Agency/releases",
   "formula": "Formula/impressive.rb",
-  "npm_stable_url": "https://impressive.chamberlain.agency/downloads/impressive.tgz"
+  "npm_stable_url": "https://impressive.chamberlain.agency/downloads/impressive.tgz",
+  "github_release_id": 412214303,
+  "published_at_utc": "2026-10-14T00:13:03Z",
+  "release_url": "https://github.com/Chamberlain-Agency/releases/releases/tag/impressive-0.4.0-unified.13"
 }
