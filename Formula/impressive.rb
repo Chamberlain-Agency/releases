@@ -1,9 +1,11 @@
+require "json"
+
 class Impressive < Formula
   desc "Build and edit WordPress/Bricks websites through your AI assistant"
   homepage "https://impressive.chamberlain.agency/"
-  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.13/impressive-0.4.0-unified.13.zip"
-  version "0.4.0-unified.13"
-  sha256 "b98eaedbbdd19908eabc1518fe9011fa1bc5674163f35a4dddce21173ee8056d"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/impressive-0.4.0-unified.15/impressive-0.4.0-unified.15.zip"
+  version "0.4.0-unified.15"
+  sha256 "e6d058eb35f43cd6b5fa5a380ab4848ae00d21de79762cd9bcf0ae977daf8928"
   license :cannot_represent
 
   depends_on "python@3.13"
@@ -31,6 +33,19 @@ class Impressive < Formula
       exec "#{Formula["python@3.13"].opt_bin}/python3.13" "#{opt_libexec}/helpers/install.py" --stage "$@"
     EOS
     (bin/"impressive").chmod 0755
+  end
+
+  def post_install
+    # Homebrew relocates README/license/changelog files to the formula prefix.
+    # The retained installer needs the complete positive inventory in libexec.
+    JSON.parse((libexec/"PACKAGE-FILES.json").read).fetch("files").each do |relative|
+      destination = libexec/relative
+      next if destination.file?
+      source = prefix/relative
+      raise "Missing Impressive package file: #{relative}" unless source.file?
+      destination.dirname.mkpath
+      cp source, destination
+    end
   end
 
   def caveats
