@@ -1,9 +1,9 @@
 class Locke < Formula
   desc "Save chats and continue work through your connected Google Drive"
   homepage "https://locke.chamberlain.agency/"
-  url "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.5/locke-0.4.5.zip"
-  version "0.4.5"
-  sha256 "1b614c3b20ea987e2a80973fcc5d141727c643a62d2f7d0019b1845e3c5f248c"
+  url "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.8/locke-0.4.8.zip"
+  version "0.4.8"
+  sha256 "388112bece89a7fe0e901327a29803af7d4a97fad38081bf4ec7b429c53412f6"
   license :cannot_represent
   depends_on "node"
   def install
