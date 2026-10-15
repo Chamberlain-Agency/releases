@@ -1,0 +1,38 @@
+{
+  "product": "Locke",
+  "version": "0.4.5",
+  "filename": "locke-0.4.5.zip",
+  "url": "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.5/locke-0.4.5.zip",
+  "tag": "locke-0.4.5",
+  "publication_status": "published",
+  "website_url": "https://locke.chamberlain.agency/downloads/locke-0.4.5.zip",
+  "permanent_download": "https://download.locke.chamberlain.agency/",
+  "bytes": 518517,
+  "sha256": "1b614c3b20ea987e2a80973fcc5d141727c643a62d2f7d0019b1845e3c5f248c",
+  "formula": "Formula/locke.rb",
+  "repository": "Chamberlain-Agency/releases",
+  "edition": "locke",
+  "plugin_id": "Plugin_50f2944801fc819189f92e4a35142db5",
+  "git_identity": {
+    "name": "yawsh",
+    "email": "177674030+yaw-sh@users.noreply.github.com"
+  },
+  "installation": "Agent-run setup registers native Codex and preserves account, folder, capture state and earlier packages.",
+  "agent_install_url": "https://locke.chamberlain.agency/install.md",
+  "automatic_updates": {
+    "default": "automatic",
+    "check": "normal Codex SessionStart, at most daily",
+    "channel": "https://locke.chamberlain.agency/downloads/release.json",
+    "integrity": "website receipt and GitHub asset SHA-256/byte count plus positive ZIP inventory",
+    "recovery": "durable switch journal, retained versions, rollback and interrupted-switch recovery",
+    "web": "private host import/update controls; no guaranteed background updater"
+  },
+  "npm": {
+    "filename": "locke-0.4.5.tgz",
+    "bytes": 470173,
+    "sha256": "fd3ba374e039bd4709f67f2089f6961ae3194c804f91549b6bcde7d92c0839c7",
+    "url": "https://github.com/Chamberlain-Agency/releases/releases/download/locke-0.4.5/locke-0.4.5.tgz",
+    "command": "locke setup",
+    "registry_published": false
+  }
+}

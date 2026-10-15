@@ -27,3 +27,5 @@ Locke 0.4.2 retains seven skills and adds native Codex lifecycle hooks plus one-
 For native Codex, run `locke codex-install` after package-manager installation, then trust Locke's five hooks through `/hooks`. The installer checks the existing Google Drive connection first and registers a native copy with Codex's supported local plugin source. The ZIP stays a single portable plugin for private ChatGPT Web import.
 
 Locke 0.4.3 adds one copied agent installation request and automatic verified native updates during normal session startup, at most daily, with retained versions and interrupted-switch recovery. Existing Drive bindings, capture settings and pending deliveries remain outside packages.
+
+Locke 0.4.5 adds project save/reopen, authorized Shield work and retained output delivery, bounded native recovery, source-linked context packs, quiet post-answer saving and the final file-transfer repairs. Native updates follow the existing normal-startup channel; Web uses private host controls. Chrome remains deferred and Handoff remains independent.
